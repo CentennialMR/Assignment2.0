@@ -12,22 +12,7 @@ let user = mongoose.Schema
             trim:true,
             required:'username is required'
         },
-        /*
-        password:
-        {
-            type:string,
-            default:'',
-            trim:true,
-            required:'username is required'
-        }
-        */
-        username:
-        {
-            type:String,
-            default:'',
-            trim:true,
-            required:'username is required'
-        },
+      
         email:
         {
             type:String,

@@ -1,0 +1,44 @@
+<%- include('../partials/header'); -%>
+<%- include('../partials/main_nav'); -%>
+
+<div class="center">
+    <h1 style="color:#2d1b70;margin-top:30px">Bussiness Contact</h1>
+    </div>
+
+<main class="container">
+<div class="row">
+    <div class="col-md-offset-3 col md-8">
+        
+        <%if(typeof displayName =='string' && displayName){%>
+        <a href="/bcontactList/add" class="btn btn-info" role="button">
+            <i class ="fas fa-plus-circle"></i>Add a Bussiness Contact</a>
+            <%}%>
+        <br>
+        <table class = "table table-bordered table-striped table-hover">
+            <tr>
+                <th class="text-center col-2">Contact Name</th>
+                <th class="text-center col-2">Contact Number</th>
+                <th class="text-center col-1">Email Address</th>
+                <%if(typeof displayName =='string' && displayName){%>
+                <th class="text-center col-1"></th>
+                <th class="text-center col-1"></th>
+                <%}%>
+                </tr>
+           <% for(let count = 0; count<BcontactList.length; count++){ %>
+            <tr>
+                <td class = "text-center col-2"><%=BcontactList[count].name%></td>
+                <td class = "text-center col-2"><%=BcontactList[count].number%></td>
+                <td class = "text-center col-1"><%=BcontactList[count].email%></td>
+                <%if(typeof displayName =='string' && displayName){%>
+                <td class ="text-center col-1"><a href="/BcontactList/update/<%=BcontactList[count]._id%>" class="btn btn-info"><i class="fas fa-pencil-alt"></i>Update</a></td>
+                <td class ="text-center col-1"><a href="/BcontactList/delete/<%=BcontactList[count]._id%>" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</a></td>    
+            <%}%>
+            </tr>
+                <%}%>
+            </table>
+
+        </div>
+    </div>
+    </main>
+<%- include('../partials/bottom_nav'); -%>
+<%- include('../partials/footer'); -%>

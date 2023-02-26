@@ -1,23 +1,35 @@
-<<<<<<< HEAD
 <%-include ('partials/header.ejs');%>
 <%-include ('partials/main_nav.ejs');%>
   
+<div class="photo">
+  <img src="/images/marielar.jpg" alt="photo" />
+</div>  
 
+<div class="center">
+<h1 style="color:#2d1b70;margin-top:30px"><%= title %></h1>
+
+</div>
+
+<div style="margin-left:50px">
+
+<p style="color:#605d72; font-size:xx-large;">
+  Hello! My name is Mariela Ramos, I’m a Systems Engineer specializing in Business Process Management. I have more than 10 years of experience in implementing 
+  and managing computer centers primarily for government institutions back in Peru. I enjoy learning and one of my recent interests is in Artificial Intelligence 
+  therefore I decided to take the program of Artificial Intelligence-Software Engineering at Centennial College. 
+</p>
+
+<div>
+ <p style="color:#605d72; font-size:xlarge;">
+  For more information read 
   
-  <h1><%= title %></h1>
-   <p>Welcome to <%= title %></p>
-   <p>We are Timble Technologies - Technology in Action</p>
-
-   <%-include ('partials/bottom_nav.ejs');%>
-<%-include ('partials/footer.ejs');%>   
-=======
-<%- include('partials/header'); -%>
-<%- include('partials/main_nav'); -%>
+ 
+  <a class="aboutlink" href="/images/resumemr.pdf" target="_blank">My Resume!</a>
+ 
+  <a class="button" href="/services" target="_self">Next</a>
+ 
+</div>    
+</div>
+</p>
   
-  <h1><%= title %></h1>
-  <p>Welcome to <%= title %></p>
-  <p>We are Timble Technologies - Technology in Action</p>
->>>>>>> 6fe48f3c64e315231db0268ff2db189540e2d78e
-
 <%- include('partials/bottom_nav'); -%>
 <%- include('partials/footer'); -%>
