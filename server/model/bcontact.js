@@ -9,4 +9,8 @@ let bcontactModel = mongoose.Schema({
     collection:"bcontact"
 });
 
+
+
 module.exports = mongoose.model('bcontact',bcontactModel);
+
+
