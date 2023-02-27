@@ -23,10 +23,10 @@
             <%}%>
           </li>
 
-          <% if (title =="Services"){%>
+          <% if (title =="services"){%>
             <li class="nav-item">
               <%} else {%>
-              <a class="nav-link active" aria-current="page" href="/Services"><i class="fa-sharp fa-solid fa-computer-mouse"></i>Services</a>
+              <a class="nav-link active" aria-current="page" href="/services"><i class="fa-sharp fa-solid fa-computer-mouse"></i>Services</a>
               <%}%>
             </li>
   
@@ -44,13 +44,13 @@
               <%}%>
             </li>
 
-            <% if (title =="Contact"){%>
+            <% if (title =="contact"){%>
               <li class="nav-item">
                 <%} else {%>
-                <a class="nav-link active" aria-current="page" href="/Contact"><i class="fa-solid fa-phone"></i>Contact Me</a>
+                <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-phone"></i>Contact Me</a>
                 <%}%>
               </li>
-              
+
             <%if(typeof displayName =='string' && displayName){%>
             <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome, <%=displayName%></li>
             <li class="nav-item"><a href="/logout" class="nav-link"><i class="fas fa-lg fa-sign-out-alt"></i>logout</a></li>
