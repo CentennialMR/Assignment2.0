@@ -3,6 +3,8 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let passport = require('passport');
 let bcontactController = require('../controllers/bcontact');
+
+
 //helper function for guard purposes
 function requireAuth(req,res,next)
 {

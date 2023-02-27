@@ -14,9 +14,9 @@
             <i class ="fas fa-plus-circle"></i>Add a Bussiness Contact</a>
             <%}%>
         <br>
-        <table class = "table table-bordered table-striped table-hover">
+        <table id="myTable" class = "table table-bordered table-striped table-hover">
             <tr>
-                <th class="text-center col-2">Contact Name</th>
+                <th class="text-center col-2" onclick="sortTable(0, 'str')"><i class="fa-solid fa-sort"></i>  Contact Name</th>
                 <th class="text-center col-2">Contact Number</th>
                 <th class="text-center col-1">Email Address</th>
                 <%if(typeof displayName =='string' && displayName){%>
@@ -40,5 +40,9 @@
         </div>
     </div>
     </main>
+
+    
+
+
 <%- include('../partials/bottom_nav'); -%>
 <%- include('../partials/footer'); -%>
