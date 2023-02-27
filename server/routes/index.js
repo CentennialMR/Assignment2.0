@@ -12,9 +12,9 @@ router.get('/about', indexController.displayAboutPage);
 /* GET projects page. */
 router.get('/projects', indexController.displayProjectsPage);
 /* GET Services page. */
-router.get('/services', indexController.displayServicesPage);
+router.get('/Services', indexController.displayServicesPage);
 /* GET Contact Us page. */
-router.get('/contact', indexController.displayContactPage);
+router.get('/Contact', indexController.displayContactPage);
 
 /* GET Router for displaying the login page*/
 router.get('/login', indexController.displayLoginPage);
